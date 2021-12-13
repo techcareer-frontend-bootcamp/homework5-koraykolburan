@@ -1,59 +1,113 @@
 /* GENERAL */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
-  width: 3px;
-  background-color: #eee;
+    width: 3px;
+    background-color: #eee;
 }
+
 *::-webkit-scrollbar-track {
-  background-color: #ccc;
-  width: 1px;
-  border: 1px solid #fff;
+    background-color: #ccc;
+    width: 1px;
+    border: 1px solid #fff;
 }
+
 *::-webkit-scrollbar-button {
-  display: none;
+    display: none;
 }
+
 *::-webkit-scrollbar-thumb {
-  background-color: #000;
+    background-color: #000;
 }
 
 p {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 
 /* NAVBAR 	*/
+
 .navbar.bg-dark {
-  background-color: rgba(0, 0, 0, 1) !important;
+    background-color: rgba(0, 0, 0, 1) !important;
+    color: white !important;
 }
 
+.navbar.bg-dark,
+a {
+    color: grey !important;
+}
+
+.navbar.bg-dark,
+a:hover {
+    color: white !important;
+}
+
+.nav>span>a {
+    color: blue !important;
+}
+
+.nav>span>a:hover {
+    color: lightblue !important;
+}
+
+
 /* HEADER */
+
 header {
-  background: url("../img/bg-header.jpg") no-repeat center center fixed; 
-  background-size: cover;
+    background: url("../img/bg-header.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 header .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-} 
-
-/* creative */ 
-#creative .caseArea { 
-  margin: 50px -50px 0 0; 
-  position: relative;
-  z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-  
+
+h1 {
+    font-weight: 100 !important;
+    font-size: 60px !important;
+}
+
+h1>span {
+    color: rgb(50, 50, 247) !important;
+}
+
+
+/* creative */
+
+#creative .caseArea {
+    margin: 50px -20px 0 0;
+    position: relative;
+    z-index: 100;
+}
+
+.content-creative>h4 {
+    font-weight: 100 !important;
+    color: rgb(50, 50, 247) !important;
+}
+
+
+/* contact */
+
+.contact-us {
+    font-weight: 100 !important;
+    font-size: 50px !important;
+    color: rgb(50, 50, 247) !important;
+}
+
+
 /* responsive*/
+
 @media screen and (max-width: 992px) {
-  .display-3 {
-    font-size: 35px !important;
-  }
-  #creative .caseArea {
-    margin-right: 0px;
-  }
-  #creative .caseImage {
-    display: none;
-  }
+    .display-3 {
+        font-size: 35px !important;
+    }
+    #creative .caseArea {
+        margin-right: 0px;
+    }
+    #creative .caseImage {
+        display: none;
+    }
 }
